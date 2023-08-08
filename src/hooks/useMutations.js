@@ -2,10 +2,10 @@ import { mapMutations, useStore } from "vuex";
 
 /**
  * 生成与mutations对话的方法
- * @param {*} mapper - mapMutations所需要的参数
+ * @param { object | string[] } mapper - mapMutations所需要的参数
  * @returns 返回值是触发mutations的方法对象
  */
-export default function useState(mapper) {
+export default function useMutations(mapper) {
   const store = useStore();
   const mutations = mapMutations(mapper);
   const result = {};

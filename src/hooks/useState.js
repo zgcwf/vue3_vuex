@@ -3,7 +3,7 @@ import { mapState, useStore } from "vuex";
 
 /**
  * 映射state中的数据为计算属性
- * @param {*} mapper - mapState所需要的参数
+ * @param { object | string[] } mapper - mapState所需要的参数
  * @returns 返回值是映射完成的计算属性对象
  */
 export default function useState(mapper) {
